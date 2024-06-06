@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Monitor</title>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="school-name">
+            ÁREA DO MONITOR
+        </div>
+        <!-- Menu Icon substituindo o botão Menu -->
+        <button id="menu_icon">&#9776;</button>
+    </header>
+    <div class="container">
+
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="livros.html" id="livros-button" class="button">Livros</a></li>
+                <li><a href="generos.html" id="generos-button" class="button">Gêneros</a></li>
+                <li><a href="emprestimos.html" id="monitores-button" class="button">Empréstimos</a></li>
+                <li><a </li>
+            </ul>
+        </div>
+
+        <!-- Formulário para cadastrar novo aluno e empréstimo de livro -->
+        <form id="form-cadastro" method="post" action="submit">
+            <h2>Cadastrar Aluno e Empréstimo de Livro</h2>
+            <label for="nome">Nome do Aluno:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="turma-aluno">Turma:</label>
+            <input type="text" id="turma" name="turma" required>
+            <label for="livro">Livro:</label>
+            <input type="text" id="livro" name="livro" required>
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+            <label for="emprestimo">Data de Empréstimo:</label>
+            <input type="date" id="emprestimo" name="emprestimo" required>
+            <label for="devolucao">Data de Devolução:</label>
+            <input type="date" id="devolucao" name="devolucao" required>
+            <button type="submit">Cadastrar</button>
+            <a href="index.html" id="btn-sair">Sair</a>
+        </form>
+    </div>
+    <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

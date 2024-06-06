@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca escolar</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+    <header>
+        <div class="school-name">
+            BIBLIOTECA GIL RODRIGUES
+        </div>
+        <!-- Menu Icon substituindo o botão Menu -->
+        <button id="menu_icon">&#9776;</button>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="livros.html" id="livros-button" class="button">Livros</a></li>
+            <li><a href="generos.html" id="generos-button" class="button">Gêneros</a></li>
+            <li><a href="monitores.html" id="monitores-button" class="button">Monitores</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <section id="livros">
+            <!-- Conteúdo dos livros -->
+        </section>
+        <section id="generos">
+            <!-- Conteúdo dos gêneros -->
+        </section>
+        <section id="monitores">
+            <!-- Conteúdo dos monitores -->
+        </section>
+        <section id="horarios">
+            <!-- Conteúdo dos horários -->
+        </section>
+    </div>
+
+    <!-- Formulário de login -->
+    <div class="login-form">
+        <h2>Bem vindo!</h2>
+        <form id="login-form" action="login.php" method="post">
+            <input type="text" id="username" name="username" placeholder="Usuário" required>
+            <input type="password" id="password" name="password" placeholder="Senha" required>
+            <input type="submit" id="login-button" value="Login">
+            <p id="error-message" class="error-message" style="display: none;">Credenciais inválidas. Tente novamente.</p>
+            <p><a href="#">Esqueceu a senha?</a></p>
+        </form>
+        
+
+        <script src="/static/js/index.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url(https://s2.glbimg.com/p71lnqMrToEIc_3v8TPC8-qLcnw=/e.glbimg.com/og/ed/f/original/2016/03/28/trinity-college-1.jpg) ;
+    text-align: center; /* Centraliza todo o conteúdo na página */
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Estilos específicos */
+.school-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Menu Icon */
+#menu_icon {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+#menu_icon:hover {
+    color: #f0f0f0;
+}
+
+#menu_icon.open {
+    transform: rotate(90deg);
+}
+
+/* Mostrar/ocultar a barra lateral */
+.sidebar.active {
+    left: 0;
+}
+
+/* Estilos suaves para os botões */
+a.button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo para o botão "Livros" */
+a#livros-button {
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+
+a#livros-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o botão "Gêneros" */
+a#generos-button {
+    background-color: #28a745;
+    border: 2px solid #28a745;
+}
+
+a#generos-button:hover {
+    background-color: #218838;
+}
+
+/* Estilo para o botão "Monitores" */
+a#monitores-button {
+    background-color: #dc3545;
+    border: 2px solid #dc3545;
+}
+
+a#monitores-button:hover {
+    background-color: #c82333;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Reajuste para o conteúdo dentro do contêiner */
+}
+
+h1, h2 {
+    color: white; /* Cor do texto mais escura */
+}
+
+form {
+    margin-bottom: 20px;
+    background-color: black; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 8px;
+    color: white; /* Cor do texto mais escura */
+    text-align: center; /* Centraliza os elementos do formulário */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form button {
+    width: calc(100% - 18px); /* Largura igual ao campo de entrada */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 10px; /* Adiciona espaço entre o botão e os campos de entrada */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center; /* Centraliza o conteúdo da tabela */
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: white; /* Cor do texto mais escura */
+}
+
+#btn-sair {
+    display: block;
+    width: 50%; /* Defina a largura desejada */
+    margin: 20px auto; /* Centraliza o botão horizontalmente e adiciona espaço superior e inferior */
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center; /* Centraliza o conteúdo do botão */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    transition: background-color 0.3s;
+}
+
+#btn-sair:hover {
+    background-color: #c82333;
+}

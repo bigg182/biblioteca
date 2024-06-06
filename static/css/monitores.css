@@ -1,0 +1,70 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://unifsa.com.br/site/wp-content/uploads/2020/03/DSC_3172-scaled.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para os botões */
+#monitores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.monitores {
+    background-color: #4CAF50; /* Cor de fundo dos botões */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.monitores:hover {
+    background-color: #45a049; /* Mudança de cor ao passar o mouse */
+}
+
+/* Estilos para os dias da semana */
+#segunda { background-color: #f44336; }
+#terça { background-color: #2196F3; }
+#quarta { background-color: #FFEB3B; }
+#quinta { background-color: #FF9800; }
+#sexta { background-color: #9C27B0; }
+
+/* Outros estilos permanecem os mesmos */
+
+/* Estilo para o tooltip */
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    z-index: 1;
+}

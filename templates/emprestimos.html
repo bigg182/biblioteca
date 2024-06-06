@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Administração de Empréstimos</title>
+    <link rel="stylesheet" href="/static/css/pagina-adm.css">
+</head>
+<body>
+    <header>
+        <div class="school-name">
+            ÁREA DE ADMINISTRAÇÃO DE EMPRÉSTIMOS
+        </div>
+        <!-- Menu Icon substituindo o botão Menu -->
+        <button id="menu_icon">&#9776;</button>
+    </header>
+
+    <div class="row">
+        <section class="chart">
+            <h2>Número de Empréstimos por Mês</h2>
+            <!-- Aqui você pode inserir dinamicamente os dados de empréstimos por mês -->
+        </section>
+
+        <section class="chart">
+            <h2>Top 5 Livros Mais Emprestados</h2>
+            <!-- Aqui você pode inserir dinamicamente os dados dos top 5 livros mais emprestados -->
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="chart">
+            <h2>Empréstimos Pendentes</h2>
+            <li>Nome: O Nome do Vento<br>
+                    Autor: Patrick Rothfuss<br>
+                    Aluno: Emerson Marcos<br>
+                    Turma: 3bds<br>
+                    Data de empréstimo: 04/06/2024<br>
+                    Data de devolução: 11/06/2024</li>
+        </section>
+
+        <section class="chart">
+            <h2>Empréstimos Concluídos</h2>
+            <ul>
+            </ul>
+        </section>
+    </div>
+
+    <section class="livros-section">
+        <h2>Livros Cadastrados</h2>
+        <ul id="livros-list"></ul>
+        <li> Titulo: O Nome do Vento | Autor: Patrick Rothfuss | Isbn: 978-8578270698</li><br>
+        <li> Titulo: A Guerra dos Tronos | Autor: George R. R. Martin | Isbn: 978-8556510051</li><br>
+        <li> Titulo: A iliada | Autor: Homero | Isbn: 9780405114137</li><br>
+    </section>
+    
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="livros.html" id="livros-button" class="button">Livros</a></li>
+            <li><a href="generos.html" id="generos-button" class="button">Gêneros</a></li>
+            <li><a href="monitores.html" id="monitores-button" class="button">Monitores</a></li>
+        </ul>
+    </div>
+    <script src="/static/js/pagina-adm.js"></script>
+</body>
+</html>

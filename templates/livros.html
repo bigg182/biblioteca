@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Livros</title>
+    <link rel="stylesheet" href="/static/css/livros.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pesquisa de Livros</h1>
+        <form id="searchForm" onsubmit="return searchBooks()">
+            <label for="searchQuery">Pesquisar:</label>
+            <input type="text" id="searchQuery" name="searchQuery" placeholder="Digite o título ou autor do livro">
+            <button type="submit">Pesquisar</button>
+        </form>
+        <br>
+        <button onclick="window.location.href = 'index.html';">Voltar para a página inicial</button><br><br>
+        <button id="bot2" onclick="window.location.href = 'dashboard.html';">Voltar para a página dos monitores</button><br><br>
+        <button id="bot3" onclick="window.location.href = 'pagina-adm.html';">Voltar para a página de admin</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="/static/js/livros.js"></script>
+</body>
+</html>

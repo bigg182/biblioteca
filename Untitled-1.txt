@@ -1,0 +1,13 @@
+-- database: d:\projeto final biblioteca\emprestimo.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+CREATE TABLE IF NOT EXISTS emprestimo (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome_aluno TEXT NOT NULL,
+    matricula TEXT NOT NULL,
+    turma TEXT NOT NULL,
+    livro TEXT NOT NULL,
+    autor TEXT NOT NULL,
+    data_emprestimo DATE NOT NULL,
+    data_devolucao DATE NOT NULL
+);

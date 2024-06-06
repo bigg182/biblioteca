@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gêneros de Livros</title>
+    <link rel="stylesheet" href="/static/css/generos.css">
+</head>
+<body>
+    <div class="container">
+      <h1>Escolha o Gênero:</h1>
+
+        <div id="genreButtons">
+          <button class="genreButton" id="poemas">Poemas</button>
+          <button class="genreButton" id="infantojuvenil">Infanto Juvenil</button>
+          <button class="genreButton" id="contos">Contos</button>
+          <button class="genreButton" id="ficcao">Ficção</button>
+          <button class="genreButton" id="classicos">Clássicos</button>
+        </div>
+    
+        <!-- Div para a lista de livros -->
+        <div class="livros" id="livrosContainer" style="display: none;">
+          <h3>Principais Livros:</h3>
+          <ul id="livrosLista"></ul>
+        </div>
+      </div>
+
+      <script src="/static/js/generos.js"></script>
+</body>
+</html>
