@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://miro.medium.com/v2/resize:fit:7008/1*PJBH4y8yBD0zfYoTqujj7A.jpeg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  #genreButtons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .genreButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .genreButton:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+  }
+
+  #livrosContainer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .livros h3 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .livros ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .livros li {
+    margin-bottom: 5px;
+    color: #333;
+  }
